@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+    <!-- font-awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     <!-- css file -->
+      <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <!-- heading -->
+    <div class="h1 text-dark text-center pt-3 pb-3 " id="heading">FRUITS SHOP <i class="fa-solid fa-seedling"></i></div>
+
+    <!-------------------- cards -------------->
+    <!-- card1 -->
+    <div class="card float-left">
+        <div class="card-header">
+            <img src="Assests/images/apple.jpeg" alt="" class="">
+        </div>
+        <div class="card-body">
+            <h3 class="text-dark font-weight-bold text-center">APPLE</h3>
+            <p class="text-center">Good For Health</p>
+            <h4 class="text-center ">Price: <del>1000</del>-200 Rs</h4>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-outline-success pl-4 pr-4" id="button1" data-target="#modaldata" data-toggle="modal">VIEW</button>
+
+            <!------------- modal 1  for view button --------->
+            <div class="modal fade" id="modaldata">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header text-center justify-content-center">
+                            <h2 class="modal-title text-center text-dark">Fruits & Vegetables</h2>
+                            <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="w-50 bg-dark float-left">
+                                <img src="Assests/images/apple.jpeg" alt="" class="img-fluid">
+                            </div>
+                            <div class="w-50 float-left p-4">
+                                <h1>Apple</h1>
+                                <p >Good For Health</p>
+                                <h4>Price: <del>1000</del>-200 Rs</h4>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fugiat quis magni inventore magnam! Voluptas consequuntur quis, dolor perspiciatis accusamus rerum molestias dolorum ipsam modi fugiat natus veritatis, aut eveniet!</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer m-auto">
+                            <button class="btn btn-outline-danger px-4  font-weight-bold" data-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------------------------------- -->
+            <button class="btn btn-outline-primary pl-4 pr-4" id="button2" data-target="#modal2" data-toggle="modal">BUY</button>
+
+            <!-- modal 2 for buy button -->
+            <div class="modal fade" id="modal2">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header text-center justify-content-center bg-warning">
+                            <h2 class="modal-title text-center text-dark ">Buy Now</h2>
+                            <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <label for="" class="m-2">Product Quantity</label>
+                            <input type="number" placeholder="Enter Quantity of Product" class="h-100 p-2 border mt-1">
+                            <label for="text" class="m-2">Name</label>
+                            <input type="text" placeholder="Enter name" class="h-100 p-2 border mt-1">
+                            <label for="text" class="m-2">Mobile</label>
+                            <input type="text" placeholder="Enter 10 digit mobile number" class="h-100 p-2 border mt-1">
+                            <label for="text" class="m-2">Address</label>
+                            <input type="text" placeholder="Enter shipping address" class="h-100 p-2 border mt-1">
+                           
+                        </div>
+                        <div class="modal-footer m-auto">
+                            <button class="btn btn-outline-warning px-4  font-weight-bold">Order Now</button>
+                            <button class="btn btn-outline-danger px-4  font-weight-bold" data-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- card2 -->
+    <div class="card float-left">
+        <div class="card-header">
+            <img src="Assests/images/orange.jpeg" alt="" class="">
+        </div>
+        <div class="card-body">
+            <h3 class="text-dark font-weight-bold text-center">ORANGE</h3>
+            <p class="text-center">Good For Health</p>
+            <h4 class="text-center ">Price: <del>1000</del>-200 Rs</h4>
+        </div>
+        <div class="card-footer">
+
+            <button class="btn btn-outline-success pl-4 pr-4" id="button1" data-target="#card2modal" data-toggle="modal">VIEW</button>
+            <!------------- modal 2  for view button --------->
+            <div class="modal fade" id="card2modal">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header text-center justify-content-center">
+                            <h2 class="modal-title text-center text-dark">Fruits & Vegetables</h2>
+                            <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="w-50 bg-dark float-left">
+                                <img src="Assests/images/orange.jpeg" alt="" class="img-fluid">
+                            </div>
+                            <div class="w-50 float-left p-4">
+                                <h1>Orange</h1>
+                                <p>Good For Health</p>
+                                <h4>Price: <del>1000</del>-200 Rs</h4>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fugiat quis magni inventore
+                                    magnam! Voluptas consequuntur quis, dolor perspiciatis accusamus rerum molestias dolorum ipsam
+                                    modi fugiat natus veritatis, aut eveniet!</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer m-auto">
+                            <button class="btn btn-outline-danger px-4  font-weight-bold" data-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+
+            <button class="btn btn-outline-primary pl-4 pr-4" id="button2" data-target="#modal2" data-toggle="modal">BUY</button>
+        </div>
+    </div>
+    <!-- card3 -->
+    <div class="card float-left">
+        <div class="card-header">
+            <img src="Assests/images/watermelon.jpeg" alt="" class="">
+        </div>
+        <div class="card-body">
+            <h3 class="text-dark font-weight-bold text-center">WATERMELON</h3>
+            <p class="text-center">Good For Health</p>
+            <h4 class="text-center ">Price: <del>1000</del>-200 Rs</h4>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-outline-success pl-4 pr-4" id="button1" data-target="#card3modal" data-toggle="modal">VIEW</button>
+                <!------------- modal 3  for view button --------->
+                    <div class="modal fade" id="card3modal">
+                        <div class="modal-dialog modal-md modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header text-center justify-content-center">
+                                    <h2 class="modal-title text-center text-dark">Fruits & Vegetables</h2>
+                                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="w-50 bg-dark float-left">
+                                        <img src="Assests/images/watermelon.jpeg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="w-50 float-left p-4">
+                                        <h2>Watermelon</h2>
+                                        <p>Good For Health</p>
+                                        <h4>Price: <del>1000</del>-200 Rs</h4>
+                                    </div>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fugiat quis magni inventore
+                                            magnam! Voluptas consequuntur quis, dolor perspiciatis accusamus rerum molestias dolorum ipsam
+                                            modi fugiat natus veritatis, aut eveniet!</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer m-auto">
+                                    <button class="btn btn-outline-danger px-4  font-weight-bold" data-dismiss="modal">close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <button class="btn btn-outline-primary pl-4 pr-4" id="button2" data-target="#modal2" data-toggle="modal">BUY</button>
+        </div>
+    </div>
+    <!-- card4 -->
+    <div class="card float-left">
+        <div class="card-header">
+            <img src="Assests/images/banana.jpeg" alt="" class="">
+        </div>
+        <div class="card-body">
+            <h3 class="text-dark font-weight-bold text-center">BANANA</h3>
+            <p class="text-center">Good For Health</p>
+            <h4 class="text-center ">Price: <del>1000</del>-200 Rs</h4>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-outline-success pl-4 pr-4" id="button1" data-target="#card4modal" data-toggle="modal">VIEW</button>
+            <!------------- modal 4  for view button --------->
+            <div class="modal fade" id="card4modal">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header text-center justify-content-center">
+                            <h2 class="modal-title text-center text-dark">Fruits & Vegetables</h2>
+                            <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="w-50 bg-dark float-left">
+                                <img src="Assests/images/banana.jpeg" alt="" class="img-fluid">
+                            </div>
+                            <div class="w-50 float-left p-4">
+                                <h1>Banana</h1>
+                                <p>Good For Health</p>
+                                <h4>Price: <del>1000</del>-200 Rs</h4>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fugiat quis magni inventore
+                                    magnam! Voluptas consequuntur quis, dolor perspiciatis accusamus rerum molestias dolorum ipsam
+                                    modi fugiat natus veritatis, aut eveniet!</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer m-auto">
+                            <button class="btn btn-outline-danger px-4  font-weight-bold" data-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-outline-primary pl-4 pr-4" id="button2" data-target="#modal2" data-toggle="modal">BUY</button>
+        </div>
+    </div>
+    <form action="">
+        <div class="form-header"><h2 class="text-center pt-4">JOIN NOW</h2></div>
+        <div class="form-body">
+            <label for="text" class="mt-4 ml-4">Enter A Name:</label>
+            <input type="text" placeholder="Enter Name" class="ml-4">
+            <br/>
+            <label for="text" class="mt-4 ml-4">Enter A Mobile:</label>
+            <input type="text" placeholder="Enter Mobile" class="ml-4">
+            <br />
+            <label for="text" class="mt-4 ml-4">Enter A Email:</label>
+            <input type="text" placeholder="Enter Email" class="ml-4">
+            <br />
+        </div>
+        <div class="form-footer">
+            <button class="btn btn-outline-danger mt-3 pl-4 pr-4 pt-2 pb-2" id="button3">Join Now</button>
+        </div>
+    </form>
+    <!-- ------------------------------------------------ -->
+    <!-- card1 -->
+    <div class="card float-left" id="margin-row2">
+        <div class="card-header">
+            <img src="Assests/images/cherry.jpeg" alt="" class="">
+        </div>
+        <div class="card-body">
+            <h3 class="text-dark font-weight-bold text-center">CHERRY</h3>
+            <p class="text-center">Good For Health</p>
+            <h4 class="text-center ">Price: <del>1000</del>-200 Rs</h4>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-outline-success pl-4 pr-4" id="button1" data-target="#card5modal" data-toggle="modal">VIEW</button>
+            <!------------- modal 4  for view button --------->
+            <div class="modal fade" id="card5modal">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header text-center justify-content-center">
+                            <h2 class="modal-title text-center text-dark">Fruits & Vegetables</h2>
+                            <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="w-50 bg-dark float-left">
+                                <img src="Assests/images/cherry.jpeg" alt="" class="img-fluid">
+                            </div>
+                            <div class="w-50 float-left p-4">
+                                <h2>Cherry</h2>
+                                <p>Good For Health</p>
+                                <h4>Price: <del>1000</del>-200 Rs</h4>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fugiat quis magni inventore
+                                    magnam! Voluptas consequuntur quis, dolor perspiciatis accusamus rerum molestias dolorum ipsam
+                                    modi fugiat natus veritatis, aut eveniet!</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer m-auto">
+                            <button class="btn btn-outline-danger px-4  font-weight-bold" data-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-outline-primary pl-4 pr-4" id="button2" data-target="#modal2" data-toggle="modal">BUY</button>
+        </div>
+    </div>
+    <!-- card2 -->
+    <div class="card float-left" id="margin-row2">
+        <div class="card-header">
+            <img src="Assests/images/mango.jpeg" alt="" class="">
+        </div>
+        <div class="card-body">
+            <h3 class="text-dark font-weight-bold text-center">MANGO</h3>
+            <p class="text-center">Good For Health</p>
+            <h4 class="text-center ">Price: <del>1000</del>-200 Rs</h4>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-outline-success pl-4 pr-4" id="button1" data-target="#card6modal" data-toggle="modal">VIEW</button>
+            <!------------- modal 4  for view button --------->
+            <div class="modal fade" id="card6modal">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header text-center justify-content-center">
+                            <h2 class="modal-title text-center text-dark">Fruits & Vegetables</h2>
+                            <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="w-50 bg-dark float-left">
+                                <img src="Assests/images/mango.jpeg" alt="" class="img-fluid">
+                            </div>
+                            <div class="w-50 float-left p-4">
+                                <h2>Mango</h2>
+                                <p>Good For Health</p>
+                                <h4>Price: <del>1000</del>-200 Rs</h4>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fugiat quis magni inventore
+                                    magnam! Voluptas consequuntur quis, dolor perspiciatis accusamus rerum molestias dolorum ipsam
+                                    modi fugiat natus veritatis, aut eveniet!</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer m-auto">
+                            <button class="btn btn-outline-danger px-4  font-weight-bold" data-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn btn-outline-primary pl-4 pr-4" id="button2" data-target="#modal2" data-toggle="modal">BUY</button>
+        </div>
+    </div>
+    <!-- card3 -->
+    <div class="card float-left" id="margin-row2">
+        <div class="card-header">
+            <img src="Assests/images/strawberry.jpeg" alt="" class="">
+        </div>
+        <div class="card-body">
+            <h3 class="text-dark font-weight-bold text-center">STRAWBERRY</h3>
+            <p class="text-center">Good For Health</p>
+            <h4 class="text-center ">Price: <del>1000</del>-200 Rs</h4>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-outline-success pl-4 pr-4" id="button1" data-target="#card7modal" data-toggle="modal">VIEW</button>
+                        <!------------- modal 5  for view button --------->
+                        <div class="modal fade" id="card7modal">
+                            <div class="modal-dialog modal-md modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header text-center justify-content-center">
+                                        <h2 class="modal-title text-center text-dark">Fruits & Vegetables</h2>
+                                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="w-50 bg-dark float-left">
+                                            <img src="Assests/images/strawberry.jpeg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="w-50 float-left p-4">
+                                            <h2>Strawberry</h2>
+                                            <p>Good For Health</p>
+                                            <h4>Price: <del>1000</del>-200 Rs</h4>
+                                        </div>
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fugiat quis magni inventore
+                                                magnam! Voluptas consequuntur quis, dolor perspiciatis accusamus rerum molestias dolorum ipsam
+                                                modi fugiat natus veritatis, aut eveniet!</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer m-auto">
+                                        <button class="btn btn-outline-danger px-4  font-weight-bold" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+             
+            <button class="btn btn-outline-primary pl-4 pr-4" id="button2" data-target="#modal2" data-toggle="modal">BUY</button>
+        </div>
+    </div>
+    <!-- card4 -->
+    <div class="card float-left" id="margin-row2">
+        <div class="card-header">
+            <img src="Assests/images/basket.jpeg" alt="" class="">
+        </div>
+        <div class="card-body">
+            <h3 class="text-dark font-weight-bold text-center">FRUIT BASKET</h3>
+            <p class="text-center">Good For Health</p>
+            <h4 class="text-center ">Price: <del>1000</del>-500 Rs</h4>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-outline-success pl-4 pr-4" id="button1" data-target="#card8modal" data-toggle="modal">VIEW</button>
+            <!------------- modal 5  for view button --------->
+            <div class="modal fade" id="card8modal">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header text-center justify-content-center">
+                            <h2 class="modal-title text-center text-dark">Fruits & Vegetables</h2>
+                            <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="w-50 bg-dark float-left">
+                                <img src="Assests/images/basket.jpeg" alt="" class="img-fluid">
+                            </div>
+                            <div class="w-50 float-left p-4">
+                                <h2>Fruit Basket</h2>
+                                <p>Good For Health</p>
+                                <h4>Price: <del>1000</del>-500 Rs</h4>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fugiat quis magni inventore
+                                    magnam! Voluptas consequuntur quis, dolor perspiciatis accusamus rerum molestias dolorum ipsam
+                                    modi fugiat natus veritatis, aut eveniet!</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer m-auto">
+                            <button class="btn btn-outline-danger px-4  font-weight-bold" data-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn btn-outline-primary pl-4 pr-4" id="button2" data-target="#modal2" data-toggle="modal">BUY</button>
+        </div>
+    </div>
+    <div class="side-buttons">
+        <button class="btn btn-outline-success w-100 pt-2 pb-2 font-weight-bold">New Fruits</button>
+        <button class="btn btn-outline-success w-100 mt-2 pt-2 pb-2 font-weight-bold">Fruits</button>
+        <button class="btn btn-outline-success w-100 mt-2 pt-2 pb-2 font-weight-bold">Top Sell</button>
+        <button class="btn btn-outline-success w-100 mt-2 pt-2 pb-2 font-weight-bold">Vegetables</button>
+        <button class="btn btn-outline-success w-100 mt-2 pt-2 pb-2 font-weight-bold">Organic Vegetables</button>
+        <button class="btn btn-outline-success w-100 mt-2 pt-2 pb-2 font-weight-bold">Imported</button>
+        <button class="btn btn-outline-success w-100 mt-2 pt-2 pb-2 font-weight-bold">Other Fruits</button>
+    </div>
+
+    <footer class="text-center ">
+        <div class="text-center text-light">
+            <h5>&copy; since 2024 All rights reserved Design by : Neelam Koli</h5>
+        </div>
+    </footer>
+</body>
+</html>

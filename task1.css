@@ -1,0 +1,132 @@
+#heading {
+  background-color: rgb(171, 224, 97);
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.card {
+  border: black 1px solid;
+  margin: 0.1%;
+  height: 450px;
+  width: 18%;
+}
+.card-header {
+  height: 50%;
+}
+p{
+    color: gray;
+    font-size: 20px;
+}
+#button1 {
+  margin-left: 8%;
+}
+#button2 {
+  margin-left: 4%;
+}
+/* ---------form 1------- */
+form {
+  height: 510px;
+  width: 26%;
+  float: left;
+  margin-left: 0.5%;
+}
+.form-header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(171, 224, 97);
+  border-radius: 5px 5px 0px 0px ;
+}
+.form-body {
+  height: 330px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.form-footer {
+  height: 80px;
+  width: 100%;
+  background-color: #bbbbbb;
+  border-radius: 0px 0px 5px 5px;
+}
+#button3 {
+  text-align: center;
+  margin-left: 32%;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+#button3:hover {
+  background-color: rgb(171, 224, 97);
+  color: black;
+}
+label{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+input{
+    height: 12%;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+}
+input::placeholder{
+    padding-left: 5%;
+}
+/* ---row2---*/
+#margin-row2{
+    margin-top: -2%;
+}
+.side-buttons{
+    height: 400px;
+    width: 26%;
+    float: left;
+    margin-left: 0.5%;
+    margin-top: 1%;
+}
+.side-buttons button{
+    font-size: 20px;
+    background-color: rgb(171, 224, 97);
+    color: black;
+}
+footer{
+  height: 100px;
+  width: 100%;
+  float: left;
+  background-color: 	#494949;
+  margin-top: 10%;
+}
+footer h5{
+  margin-top: 2.5%;
+  font-weight: lighter;
+}
+/* ----------------Media Query--------- */
+@media screen and (max-width: 767px) {
+  .card {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .card-header {
+    height: 50%;
+  }
+  #button1 {
+    margin-left: 20%;
+  }
+  /* ------------form-------------- */
+  form {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  #margin-row2{
+    margin-bottom: 5%;
+    }
+  .side-buttons{
+    height: 400px;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    }
+}
